@@ -8,7 +8,7 @@ basic.forever(function () {
     DigitalPin.P2,
     PingUnit.Centimeters
     )
-    richtung = distanz > 5
+    richtung = distanz > 10
     if (richtung != richtung_alt) {
         if (richtung) {
             pins.servoWritePin(AnalogPin.P0, 0)
